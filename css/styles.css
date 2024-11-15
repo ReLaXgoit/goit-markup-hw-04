@@ -60,8 +60,7 @@ img {
   gap: 40px;
 }
 
-.logo {
-  
+.logo {  
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -82,10 +81,9 @@ img {
 
 .nav-list {
   list-style: none;
-  padding: 0;
+  padding-bottom: 20px;
   margin: 0;
-  display: flex;
-  gap: 20px;
+  display: flex;  
 }
 
 .nav-list li {
@@ -235,7 +233,6 @@ img {
 /* #endregion Hero Section */
 
 /* #region Features Section 2*/
-
 .section-services {
   padding: 120px 0; 
 }
