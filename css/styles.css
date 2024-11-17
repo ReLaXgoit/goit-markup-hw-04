@@ -235,6 +235,7 @@ img {
 /* #region Features Section 2*/
 .section-services {
   padding: 120px 0; 
+  /* background-color: #f4f4fd; */
 }
   
 .container {
@@ -253,6 +254,26 @@ img {
   
 .services-item {
   width: calc((100% - 72px) / 4); 
+}
+
+.services-item svg {
+  display: block;
+  margin: 0 auto 16px;
+  width: 64px;
+  height: 64px;
+  fill: #4d5ae5; 
+  background-color: #e7eaf3; 
+  padding: 10px;
+}
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 264px;
+  height: 112px;
+  margin: 0 auto 16px;
+  background-color: #e7eaf3;
+  border-radius: 4px; 
 }
   
 .services-title {
@@ -308,19 +329,15 @@ img {
 }
 
 .team-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  background: #FFFFFF;
-  width: 264px;
-  height: auto;
-  padding-bottom: 32px;
-  border-radius: 0px 0px 4px 4px;
-  box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08),
-              0 1px 1px rgba(46, 47, 66, 0.16),
-              0 1px 6px rgba(46, 47, 66, 0.08);
-  margin: 0 24px;
+  flex: 1 1 calc(25% - 20px);
+  background-color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+              0 1px 3px rgba(0, 0, 0, 0.08);
+  margin: 24px;
 }
 
 .team-item img {
@@ -350,6 +367,39 @@ img {
   color: #434455;
 }
 
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px; 
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 8px; 
+}
+
+.icon-container {
+  width: 40px; /* Розмір області заливки */
+  height: 40px; /* Розмір області заливки */
+  border-radius: 50%; /* Кругла форма */
+  background-color: #4d5ae5; /* Фон іконки */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-bottom: 16px; /* Відступ від нижнього краю контейнера до тексту */
+}
+
+.social-icon {
+  width: 24px; /* Розмір SVG іконки */
+  height: 24px;
+  fill: #ffffff; /* Колір іконки */
+}
+
+.icon-container:hover {
+  background-color: #2e2f42; /* Зміна фону при наведенні */
+  transform: scale(1.1);
+}
 /* #endregion Team Section */
 
 /* #region Portfolio Section 4*/
