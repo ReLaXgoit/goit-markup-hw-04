@@ -105,7 +105,8 @@ img {
 
 .nav-list a:hover::after {
   width: 100%;
-  left: 0;    
+  left: 0;  
+  
 }
 
 .nav-link {
@@ -301,6 +302,7 @@ img {
 
 /* #region Team Section 3*/
 .team-section {  
+  flex-basis: calc((100% - 3 * 24px) / 4);
   padding: 120px 0;
   background-color: #F4F4FD;
   display: flex;
@@ -320,21 +322,24 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2E2F42;
-  margin-bottom: 72px;
+  margin-bottom: 72px;  
 }
 
 .team-list {
   display: flex;
   justify-content: center;
-  align-items: flex-start; 
-  gap: 24px; 
-  flex-wrap: wrap; 
+  align-items: center;
+  gap: 24px;
 }
 
-.team-item {
-  flex: 1 1 calc(25% - 24px); 
+.team-item { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   background-color: #ffffff;
   text-align: center;
+  list-style: no;
   padding: 0; 
   border: 1px solid #e0e0e0;
   /* border-radius: 8px; */
