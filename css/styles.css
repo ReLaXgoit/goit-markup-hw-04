@@ -173,7 +173,7 @@ img {
   padding: 188px 0;
   width: 100%;  
   align-items: center;
-  background-image: url('/images/people.jpg'); 
+  background-image: url('../images/people.jpg'); 
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
@@ -300,8 +300,7 @@ img {
   padding: 120px 0;
   background-color: #F4F4FD;
   display: flex;
-  justify-content: center;
-  
+  justify-content: center;  
 }
 
 .container {
@@ -334,13 +333,13 @@ img {
   text-align: center;
   padding: 0; 
   border: 1px solid #e0e0e0;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
               0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .team-item img {
-  border-radius: 8px 8px 0 0; 
+  /* border-radius: 8px 8px 0 0;  */
   width: 100%; 
   height: auto;   
 }
